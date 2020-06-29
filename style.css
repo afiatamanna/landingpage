@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'dosis', sans-serif;
+}
+.background{
+
+    margin: auto;
+    width: 88%;
+
+}
+
+.navbar{
+  margin: 25px auto;
+  display: flex;
+  align-items: center;
+
+
+}
+.logo{
+    float: left;
+    width: 280px;
+
+}
+.logo h1{
+
+    color: rgb(30, 126, 58);
+    font-weight: 900;
+    font-size: 50px;
+   
+    border: 2px double rgb(139, 34, 34);
+    border-radius: 35px;
+    text-align: center;
+}
+ul{
+    flex: 1;
+    text-align: right;
+}
+ul li{
+display: inline-block;
+margin: 0 25px;
+list-style: none;
+
+}
+ul li a{
+    color: black;
+    text-decoration: none;
+    padding: 0 15px;
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+}
+ul li a::after{
+    content: '';
+    position: absolute;
+    height: 7px;
+    width: 0;
+    background:  rgb(165, 45, 24);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    top: -40px;
+    border-radius: 35px;
+    transition: .5s;
+    ;
+}
+ul li a:hover::after{
+    width: 100%;
+
+}
+.navbar-icons{
+    margin-left: 60px;
+}
+.navbar-icons img{
+    height: 25px;
+    width:25px ;
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+.banner{
+display: flex;
+margin-top: 58px;
+height: 350px;
+width: 100%;
+
+}
+ .left{
+     flex-basis: 50%;
+ }
+ .right{
+ flex-basis: 50%;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.74), 0 6px 20px 0 rgba(0, 0, 0, 0.63);
+
+}
+.right img{
+    width: 100%;
+    height: 100%;
+   
+}
+.searchBox{
+    width: 40%;
+    display: flex;
+    padding-top: 3px;
+    border-bottom: 1px solid #dddd;
+    margin: 10px 0 30px;
+}
+.searchBox img{
+    height: 40px;
+    width: 30px;
+    cursor: pointer;
+}
+.searchBox input{
+    width: 100%;
+    margin-left: 25px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    background-color: rgba(175, 168, 125, 0.829);
+}
+.text h1{
+    color: rgb(82, 66, 32);
+    font-size: 90px;
+    font-weight: 900;
+    text-align: center;
+    
+
+}
+.text h2{
+    color: rgb(20, 59, 22);
+    font-size: 30px;
+    text-align: center;
+    
+
+}
+span{
+    color: rgb(165, 45, 24);
+    text-shadow: 2px 5px black;
+}
+
+
+
